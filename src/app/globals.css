@@ -8,3 +8,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.rhap_container {
+  background: #121212 !important;
+}
+
+.rhap_time {
+  color: #fff !important;
+}
