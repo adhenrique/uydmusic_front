@@ -1,25 +1,25 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Copyright from '@/components/Copyright';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ height: '100%' }}>
       <Box
         sx={{
-          my: 4,
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
+          width: '100%',
+          height: '100%',
           alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Yay
-        </Typography>
-        <Copyright />
+        <div>
+          <Image src="/uydlogo.png" width="300" height="300" alt="uyd logo" />
+          <br/>
+          #player
+        </div>
       </Box>
     </Container>
   );
